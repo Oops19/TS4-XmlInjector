@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<I c="XmlInjector" i="snippet" m="xml_injector.snippet" n="Scumbumbo_XmlInjector_AddInteractionTest" s="13197251937291617972">
+  <L n="add_interactions_to_objects">
+    <U>
+      <V n="object_selection" t="object_list">
+        <U n="object_list">
+          <L n="object_list">
+            <T>14940<!--GameObject: object_Mailbox--></T>
+            <T>133176<!--GameObject: object_MailboxWall--></T>
+          </L>
+        </U>
+      </V>
+      <L n="_super_affordances">
+        <T>12415634905840155217<!--ImmediateSuperInteraction: Scumbumbo_XmlInjector_InteractionTest--></T>
+      </L>
+    </U>
+    <U>
+      <V n="object_selection" t="objects_with_affordance">
+        <U n="objects_with_affordance">
+          <T n="affordance">13228<!--SimPickerInteraction: computer_Picker_Chat--></T>
+        </U>
+      </V>
+      <L n="_super_affordances">
+        <T>12415634905840155217<!--ImmediateSuperInteraction: Scumbumbo_XmlInjector_InteractionTest--></T>
+      </L>
+    </U>
+  </L>
+
+  <L n="add_interactions_to_sims">
+    <T>12415634905840155217<!--ImmediateSuperInteraction: Scumbumbo_XmlInjector_InteractionTest--></T>
+  </L>
+
+  <L n="add_interactions_to_phones">
+    <T>12078746999473962093<!--ImmediateSuperInteraction: Scumbumbo_XmlInjector_PhoneTest--></T>
+  </L>
+
+  <L n="add_interactions_to_relationship_panel">
+    <T>12415634905840155217<!--ImmediateSuperInteraction: Scumbumbo_XmlInjector_InteractionTest--></T>
+  </L>
+
+  <L n="add_mixer_interactions">
+    <U>
+      <L n="mixer_snippets">
+        <T>24508<!--AffordanceList: social_Mixers_Friendly_NonTouching--></T>
+      </L>
+      <L n="affordances">
+        <T>18361904496402431338<!--SocialMixerInteraction: Scumbumbo_XmlInjector_MixerTest--></T>
+      </L>
+    </U>
+  </L>
+</I>
