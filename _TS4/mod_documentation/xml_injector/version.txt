@@ -1,4 +1,5 @@
-XmlInjector v0.0.3-4 created on 2024-06-09 for The Sims 4 v1.107.151 and S4CL v3.4
+XmlInjector v0.0.3-4 for The Sims 4 v1.107.151 and S4CL v3.4
+Created on 2024-07-03
 v0.0.3-4
     Appended "-4" to the version number to show the supported XML injector version which is independent from the source code.
 
