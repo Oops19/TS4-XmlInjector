@@ -34,12 +34,14 @@ class ModInfo(CommonModInfo):
 
     @property
     def _version(self) -> str:
-        return '0.0.3-4'
+        return '0.0.4-4'
 
 
 """
+v0.0.4-4
+    Fix "type object 'Trait' has no attribute 'TunableReference'"
 v0.0.3-4
-    Appended "-4" to the version number to show the supported XML injector version which is independent from the source code.
+    Appended "-4" to the version number to show the supported XML injector API version which is independent from the source code.
 v0.0.2
     Tested with TS4 v1.107
 v0.0.1

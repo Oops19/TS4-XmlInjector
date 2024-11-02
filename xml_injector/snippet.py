@@ -27,6 +27,7 @@
 
 # source file: snippet.py - split into object_selection.py and snippet.py (instead of xml_injector.py as xml_injector.snippet.XmlInjector() is used in tunings).
 
+# Further changes are documented in modinfo.py and can be tracked in GIT.
 
 import services
 import sims4.log
@@ -49,7 +50,6 @@ from sims4.tuning.instances import HashedTunedInstanceMetaclass
 from sims4.tuning.tunable import HasTunableReference, Tunable, TunableTuple, TunableList, TunableReference, TunableVariant, TunableEnumEntry, OptionalTunable, TunableResourceKey
 from sims4.tuning.tunable import TunableMapping
 from sims4communitylib.utils.common_log_registry import CommonLog, CommonLogRegistry
-from traits.traits import Trait
 from tunable_multiplier import TunableMultiplier
 from ui.ui_dialog import UiDialogOk, PhoneRingType, UiDialogOption, UiDialogStyle
 
@@ -240,8 +240,9 @@ class XmlInjector(
         'add_buffs_to_trait': TunableList(
             description='A list of traits and buffs to add',
             tunable=TunableTuple(
-                trait=Trait.TunableReference(
+                trait=TunableReference(
                     description='Reference to a Trait tuning instance',
+                    manager=services.get_instance_manager(Types.TRAIT),
                     pack_safe=True
                 ),
                 buffs=TunableList(
