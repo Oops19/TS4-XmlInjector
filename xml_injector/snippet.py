@@ -351,18 +351,18 @@ class XmlInjector(
 
     @classmethod
     def _tuning_loaded_callback(cls):
-        log.info(f'Processing {str(cls)}')
+        # noinspection PyBroadException
         try:
             log.info(f'Processing {cls.__name__}')
         except:
-            pass
+            log.info(f'Processing {str(cls)}')
         version = Version()
         add_to_tuning = AddToTuning()
         try:
             version.request_version(cls.xml_injector_minimum_version, cls.version_error_dialog)
 
             for entry in cls.add_interactions_to_objects:
-                if isinstance(entry.object_selection, str) or entry.object_selection is None:
+                if entry.object_selection is None or isinstance(entry.object_selection, str):
                     log.warn('Tuning warning, missing or invalid object_selection')
                 else:
                     add_to_tuning.add_super_affordances_to_objects(entry.object_selection, entry._super_affordances)

@@ -34,10 +34,12 @@ class ModInfo(CommonModInfo):
 
     @property
     def _version(self) -> str:
-        return '0.0.4-4'
+        return '0.0.5-4'
 
 
 """
+v0.0.5-4
+    Improve logging
 v0.0.4-4
     Fix "type object 'Trait' has no attribute 'TunableReference'"
 v0.0.3-4

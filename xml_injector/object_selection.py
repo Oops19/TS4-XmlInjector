@@ -27,12 +27,14 @@
 
 # source file: snippet.py - split into object_selection.py and xml_injector.py
 
+
 import services
 from xml_injector.modinfo import ModInfo
 from objects.definition_manager import DefinitionManager
 from sims4.tuning.tunable import AutoFactoryInit, HasTunableSingletonFactory, Tunable, TunableList, TunableReference, TunableVariant, TunableEnumEntry
 from sims4communitylib.utils.common_log_registry import CommonLog, CommonLogRegistry
 from tag import Tag
+
 
 log: CommonLog = CommonLogRegistry.get().register_log(ModInfo.get_identity(), ModInfo.get_identity().name)
 log.enable()

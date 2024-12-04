@@ -25,6 +25,8 @@ from sims4.collections import FrozenAttributeDict
 
 from xml_injector.modinfo import ModInfo
 from sims4communitylib.utils.common_log_registry import CommonLog, CommonLogRegistry
+
+
 log: CommonLog = CommonLogRegistry.get().register_log(ModInfo.get_identity(), ModInfo.get_identity().name)
 log.enable()
 
@@ -42,11 +44,11 @@ class AddToTuning:
                     if AddToTuning.TESTING or sa not in tuning._super_affordances:
                         sa_to_add_list.append(sa)
                 if len(sa_to_add_list) > 0:
-                    log.info(f'  {tuning}: adding super_affordances to objects: {sa_to_add_list}')
+                    # noinspection PyBroadException
                     try:
-                        log.info(f'  {tuning.__name__}: adding super_affordances to objects: {sa_to_add_list.__name__}')  # TODO
+                        log.info(f'  {tuning.__name__}: adding super_affordances to objects: {sa_to_add_list}')  # TODO, log [] properly
                     except:
-                        pass
+                        log.info(f'  {tuning}: adding super_affordances to objects: {sa_to_add_list}')
                     tuning._super_affordances += tuple(sa_to_add_list)
 
     @staticmethod
@@ -177,7 +179,7 @@ class AddToTuning:
     @staticmethod
     def add_satisfaction_store_rewards(rewards_list):
         for reward in rewards_list:
-            log.info(f'adding satisfaction store rewards: {reward}')
+            log.info(f'  adding satisfaction store rewards: {reward}')
         SatisfactionTracker.SATISFACTION_STORE_ITEMS = FrozenAttributeDict(
             {**dict(SatisfactionTracker.SATISFACTION_STORE_ITEMS), **rewards_list})
 
