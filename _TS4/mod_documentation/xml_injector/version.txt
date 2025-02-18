@@ -1,5 +1,5 @@
-XmlInjector v0.0.5-4 for The Sims 4 v1.111.102 and S4CL v3.9
-Created on 2024-12-19
-v0.0.5-4
-    Improve logging
+XmlInjector v0.0.6-4 for The Sims 4 v1.111.102 and S4CL v3.10
+Created on 2025-01-06
+v0.0.6-4
+    No need to update, just a year 2025 build to update the documentation / tested dependencies.
 
