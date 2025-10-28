@@ -47,7 +47,7 @@ from satisfaction.satisfaction_tracker import SatisfactionTracker
 from sims4.localization import TunableLocalizedString
 from sims4.resources import Types
 from sims4.tuning.instances import HashedTunedInstanceMetaclass
-from sims4.tuning.tunable import HasTunableReference, Tunable, TunableTuple, TunableList, TunableReference, TunableVariant, TunableEnumEntry, OptionalTunable, TunableResourceKey
+from sims4.tuning.tunable import Tunable, TunableTuple, TunableList, TunableReference, TunableVariant, TunableEnumEntry, OptionalTunable, TunableResourceKey
 from sims4.tuning.tunable import TunableMapping
 from sims4communitylib.utils.common_log_registry import CommonLog, CommonLogRegistry
 from tunable_multiplier import TunableMultiplier
@@ -59,7 +59,7 @@ log.enable()
 
 # XmlInjector snippet tuning class
 class XmlInjector(
-    HasTunableReference,
+    # HasTunableReference,
     metaclass=HashedTunedInstanceMetaclass,
     manager=services.get_instance_manager(Types.SNIPPET)
 ):

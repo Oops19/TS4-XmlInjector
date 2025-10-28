@@ -25,7 +25,7 @@ But without detailed logging one never knows.
 # Addendum
 
 ## Game compatibility
-This mod has been tested with `The Sims 4` 1.111.102, S4CL 3.10, TS4Lib 0.3.36.
+This mod has been tested with `The Sims 4` 1.118.257, S4CL 3.15, TS4Lib 0.3.42.
 It is expected to be compatible with many upcoming releases of TS4, S4CL and TS4Lib.
 
 ## Dependencies
@@ -39,7 +39,7 @@ If not installed download and install TS4 and these mods.
 All are available for free.
 
 ## Removal of the mod
-Ths mod installation with unzip writes to a few directories.
+The mod installation with unzip writes to a few directories.
 To remove this mod and all related files locate the files and folders and remove them:
 * `The Sims 4/Mods/_o19_/$mod_name.*`
 * `The Sims 4/mod_data/_o19_/$mod_name/`
@@ -99,7 +99,7 @@ Some log entries in the log file ('mod_logs' folder) may contain the local usern
 [Donations](https://www.patreon.com/o19)
 
 ## Copyright and License
-* © 2024 [Oops19](https://github.com/Oops19)
+* © 2020-2025 [Oops19](https://github.com/Oops19)
 * License for '.package' files: [Electronic Arts TOS for UGC](https://tos.ea.com/legalapp/WEBTERMS/US/en/PC/)  
 * License for other media unless specified differently: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) unless the Electronic Arts TOS for UGC overrides it.
 This allows you to use this mod and re-use the code even if you don't own The Sims 4.

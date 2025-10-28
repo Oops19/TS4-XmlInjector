@@ -38,6 +38,8 @@ class ModInfo(CommonModInfo):
 
 
 """
+v0.0.6-5
+    Removed reference to HasTunableReference (broken with 1.117.227.1030 update)
 v0.0.6-4
     No need to update, just a year 2025 build to update the documentation / tested dependencies.
 v0.0.5-4
