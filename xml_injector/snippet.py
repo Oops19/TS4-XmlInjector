@@ -59,7 +59,6 @@ log.enable()
 
 # XmlInjector snippet tuning class
 class XmlInjector(
-    # HasTunableReference,
     metaclass=HashedTunedInstanceMetaclass,
     manager=services.get_instance_manager(Types.SNIPPET)
 ):
